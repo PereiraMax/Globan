@@ -3,13 +3,16 @@
 
 <h2>Alta de Cliente</h2>
 
-<form method="POST">
+<form method="POST" >
+    <fieldset>
+      
     Nombre: <input type="text" name="nombre" required>
     Teléfono: <input type="text" name="telefono" required>
     <button type="submit">Guardar</button>
+</fieldset>
 </form>
-
 <?php
+// insertar los datos en la base de datos
 if ($_POST) {
     $nombre = $_POST['nombre'];
     $telefono = $_POST['telefono'];
